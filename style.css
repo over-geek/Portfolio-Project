@@ -10,7 +10,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
-nav{
+nav, .header-container{
 	padding: 0 24px;
 }
 
@@ -41,5 +41,19 @@ header{
 }
 
 .header-container{
+	border: 1px solid black;
+}
 
+.header-container h2 {
+	font-size: 40px;
+	font-weight: 700px;
+	line-height: 52px;
+	color: #172B4D;
+}
+
+
+
+.header-container > div{
+	border: 1px solid black;
+	overflow-wrap: break-word;
 }
