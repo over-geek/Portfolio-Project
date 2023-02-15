@@ -28,9 +28,6 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Portfolio Project Readme</b></h3>
 
 </div>
@@ -114,11 +111,14 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project, open with VS Code:
+To install this project, set up linter by installing the following in project directory:
+
+Terminal commands:
 
 ```sh
-  cd my-project
-  code .
+  npm init -y
+  npx hint .
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 --->
 
