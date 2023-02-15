@@ -45,7 +45,6 @@ header {
   background-image: url("asset/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid black;
 }
 
 .main-content h1 {
