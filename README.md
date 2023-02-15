@@ -1,4 +1,4 @@
-# Hello-Microverse
+# Portfolio 
 <a name="readme-top"></a>
 
 <!--
@@ -31,7 +31,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Hello Microverse Project Readme</b></h3>
+  <h3><b>Portfolio Project Readme</b></h3>
 
 </div>
 
@@ -59,9 +59,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Portfolio Project] <a name="about-project"></a>
 
-**[Hello Microverse]** is a project to master version control and learn best practices of the Microverse GitHub flow.
+**[Portfolio]** is a project created to understand how to work with figam to create UI and to build a personal portfolio website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -187,7 +187,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[N/A]**
+- [ ] **[About Me Page]**
+- [ ] **[Contact Form]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
