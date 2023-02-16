@@ -52,6 +52,7 @@ header {
   background-image: url("asset/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 80px;
 }
 
 .main-content h1 {
@@ -148,16 +149,12 @@ header {
   line-height: 16px;
 }
 
-.card-bg-info ul li:nth-child(2) {
-  margin-left: 30px;
-}
-
 .card-text {
   color: #344563;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .card-skills {
@@ -183,6 +180,9 @@ header {
   border-radius: 8px;
 }
 
+.card-bg-info ul li:nth-child(2) {
+  margin-left: 30px;
+}
 
 .btn {
   color: #6070ff;
@@ -194,6 +194,7 @@ header {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -211,16 +212,13 @@ header {
   grid-template-rows: auto auto;
   background-color: #fff;
   border-top-right-radius: 80px;
+  padding: 114px 24px;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.about > div {
-  border: 1px solid black;
 }
 
 .about h2 {
@@ -235,6 +233,70 @@ header {
   color: #344563;
 }
 
+#about-heading {
+  padding-bottom: 15px;
+}
+
+.about .btn {
+  margin-top: 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 12px;
+}
+
+.language-header,
+.frameworks,
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 12px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.language-list > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 12px;
+  background-color: #f7f7f9;
+}
+
+.language-list p {
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.frameworks,
+.skills {
+  border-bottom: 1px solid #dfe1e6;
+  margin: 0 24px;
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.skill-list button {
+  margin-right: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 /* Media Queries */
 @media (max-width: 400px) {
