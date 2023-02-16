@@ -8,13 +8,19 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: #f7f7f9;
 }
 
 header,
 .main-content-container,
 .card-container {
   padding: 0 24px;
+}
+
+header,
+.main-content,
+.cards {
+  background-color: #fff;
 }
 
 header {
@@ -89,10 +95,11 @@ header {
   display: grid;
   grid-template-rows: auto auto auto auto;
   row-gap: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .cards {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
