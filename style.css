@@ -70,7 +70,8 @@ header {
   margin-bottom: 10px;
 }
 
-.main-content-container #social-heading {
+#social-heading,
+#about-heading {
   color: #7f8cff;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -203,6 +204,37 @@ header {
 .btn:active {
   background-color: #2230d2;
 }
+
+/* About Section */
+.about-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: #fff;
+  border-top-right-radius: 80px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about > div {
+  border: 1px solid black;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about p {
+  font-size: 16px;
+  color: #344563;
+}
+
 
 /* Media Queries */
 @media (max-width: 400px) {
