@@ -271,7 +271,7 @@ header {
 
 .skill-list .language-item {
   margin-bottom: 12px;
-  padding: 12px 12px;
+  padding: 0 12px;
 }
 
 .language-item > div {
