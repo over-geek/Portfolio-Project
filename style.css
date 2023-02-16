@@ -244,50 +244,7 @@ header {
 .skill-list {
   display: flex;
   flex-direction: column;
-}
-
-.languages {
-  display: flex;
-  flex-direction: column;
-  padding: 24px 12px;
-}
-
-.language-header,
-.frameworks,
-.skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 24px 12px;
-}
-
-.language-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.language-list > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 9px 12px;
-  background-color: #f7f7f9;
-}
-
-.language-list p {
-  margin-left: 15px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-}
-
-.frameworks,
-.skills {
-  border-bottom: 1px solid #dfe1e6;
-  margin: 0 24px;
-  font-size: 20px;
-  font-weight: 500px;
+  padding-top: 20px;
 }
 
 .skill-list button {
@@ -296,6 +253,45 @@ header {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.skill-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skill-list .language-item {
+  margin-bottom: 12px;
+  padding: 12px 12px;
+}
+
+.language-item > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 12px;
+  background-color: #f7f7f9;
+}
+
+.language-item p {
+  margin-left: 15px;
+  color: #253858;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.bottom-bar {
+  border-bottom: 1px solid #dfe1e6;
 }
 
 /* Media Queries */
