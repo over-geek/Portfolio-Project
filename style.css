@@ -161,10 +161,8 @@ header {
   padding-top: 10px;
 }
 
-.card-skills ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
+.card-skills ul li {
+  float: left;
 }
 
 .card-skills ul li {
