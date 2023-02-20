@@ -163,10 +163,7 @@ header {
 
 .card-skills ul li {
   float: left;
-}
-
-.card-skills ul li {
-  display: flex;
+  list-style: none;
   align-items: center;
   margin-right: 8px;
   background: #ebebff;
