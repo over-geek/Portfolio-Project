@@ -154,8 +154,7 @@ Open liveserver in VS Code
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[About Me Page]**
-- [ ] **[Contact Form]**
+- [ ] **[Desktop Version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
