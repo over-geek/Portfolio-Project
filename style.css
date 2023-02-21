@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f7f7f9;
 }
 
@@ -287,6 +287,74 @@ header {
 
 .bottom-bar {
   border-bottom: 1px solid #dfe1e6;
+}
+
+/* Form Section */
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 90px 24px 45px 24px;
+  background-image: url(./asset/form-shapes.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #6070ff;
+  border-top-left-radius: 80px;
+}
+
+#form ul {
+  list-style: none;
+}
+
+#form-section h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#form-section p {
+  color: #ebebff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+#form input {
+  height: 48px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#form textarea {
+  padding: 15px 38px 15px 16px;
+  height: 170px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#form button {
+  background-color: #fff;
 }
 
 /* Media Queries */
