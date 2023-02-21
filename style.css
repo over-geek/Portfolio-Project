@@ -357,6 +357,16 @@ header {
   background-color: #fff;
 }
 
+#form .btn:hover {
+  background-color: #6070ff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#form .btn:active {
+  background-color: #2230d2;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .cards {
