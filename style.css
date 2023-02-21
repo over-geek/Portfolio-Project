@@ -292,6 +292,10 @@ header {
 /* Form Section */
 
 #form-section {
+  background-color: #fff;
+}
+
+#contact-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -308,7 +312,7 @@ header {
   list-style: none;
 }
 
-#form-section h2 {
+#contact-container h2 {
   color: #fff;
   font-style: normal;
   font-weight: 700;
@@ -318,7 +322,7 @@ header {
   margin-bottom: 10px;
 }
 
-#form-section p {
+#contact-container p {
   color: #ebebff;
   font-style: normal;
   font-weight: 400;
