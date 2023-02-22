@@ -410,4 +410,53 @@ header {
     cursor: pointer;
   }
 
+  .main-content {
+    background-image: url(./asset/header-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+  }
+
+  .main-content-container {
+    width: 70%;
+  }
+
+  .cards {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .cards > div {
+    width: 50%;
+  }
+
+  .cards .screenshot {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .card-description {
+    padding: 1% 2%;
+  }
+
+  .card-1 {
+    order: 4;
+  }
+
+  .card-2 {
+    order: 3;
+  }
+
+  .card-3 {
+    order: 1;
+  }
+
+  .card-4 {
+    order: 2;
+  }
+
+  .card-2,
+  .card-4 {
+    flex-direction: row-reverse;
+  }
 }
