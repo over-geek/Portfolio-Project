@@ -82,7 +82,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[N/A]**
+- **[Responsive Design]**
+- **[Add the contact form]**
+- **[Add the validation for the form]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,14 +144,19 @@ Open liveserver in VS Code
 - Twitter: [@twitterhandle](https://twitter.com/KissiKenneth)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kenneth-agyare-kissi-673a01186/)
 
+👤 **Author 2**
+
+- GitHub: [@Abdelaziz-Ali](https://github.com/Abdelaziz-Ali)
+- Twitter: [@AbdelazizDV](https://twitter.com/AbdelazizDV)
+- LinkedIn: [in/abdelaziz-ali-dev](https://www.linkedin.com/in/abdelaziz-ali-dev)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[About Me Page]**
-- [ ] **[Contact Form]**
+- [ ] **[Desktop Version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
