@@ -14,6 +14,17 @@
             <a href="#" id="logo">My Logo</a>
             <nav>
                 <i class="fa fa-bars fa-lg"></i>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <section class="main-content">
@@ -55,7 +66,7 @@
         </section>
         <section id="card-section">
             <div class="card-container">
-                <div class="cards">
+                <div class="cards card-1">
                     <div>
                         <img src="asset/snapshot1.svg" alt="screenshot" class="screenshot">
                     </div>
@@ -87,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards card-2">
                     <div>
                         <img src="asset/snapshot2.svg" alt="screenshot" class="screenshot">
                     </div>
@@ -119,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards card-3">
                     <div>
                         <img src="asset/snapshot3.svg" alt="screenshot" class="screenshot">
                     </div>
@@ -151,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards card-4">
                     <div>
                         <img src="asset/snapshot4.svg" alt="screenshot" class="screenshot">
                     </div>
@@ -235,23 +246,27 @@
                                 <img src="asset/chevron-down.png" alt="arrow icon">
                             </button>
                         </li>
-                        <li class="language-item">
-                            <div>
-                                <img src="asset/js-icon.png" alt="js icon">
-                                <p>Javascript</p>
-                            </div>
-                        </li>
-                        <li class="language-item">
-                            <div>
-                                <img src="asset/html-icon.png" alt="html icon">
-                                <p>HTML</p>
-                            </div>
-                        </li>
-                        <li class="language-item">
-                            <div>
-                                <img src="asset/css-icon.png" alt="css icon">
-                                <p>CSS</p>
-                            </div>
+                        <li>
+                            <ul id="language-list">
+                                <li class="language-item">
+                                    <div>
+                                        <img src="asset/js-icon.png" alt="js icon">
+                                        <p>Javascript</p>
+                                    </div>
+                                </li>
+                                <li class="language-item">
+                                    <div>
+                                        <img src="asset/html-icon.png" alt="html icon">
+                                        <p>HTML</p>
+                                    </div>
+                                </li>
+                                <li class="language-item">
+                                    <div>
+                                        <img src="asset/css-icon.png" alt="css icon">
+                                        <p>CSS</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li class="skill-item bottom-bar">
                             <p>Frameworks</p>
@@ -315,7 +330,7 @@
                             ></textarea>
                             </div>
                         </li>
-                        <li>
+                        <li id="btn-container">
                             <button type="submit" class="btn">
                               Get in touch
                             </button>
