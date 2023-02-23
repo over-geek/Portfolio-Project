@@ -195,6 +195,7 @@ header {
 .btn:hover {
   background-color: #6070ff;
   color: #fff;
+  transition: 0.5s;
 }
 
 .btn:active {
