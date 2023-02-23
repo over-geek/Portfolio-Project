@@ -473,9 +473,23 @@ header {
     flex-direction: row-reverse;
   }
 
+  /* About Section */
   .about-container {
     grid-template-columns: 45% 55%;
     padding: 9%;
+  }
+
+  .skill-list {
+    padding-top: 0;
+  }
+
+  .skill-item:nth-child(1) {
+    padding: 8px 12px 24px 12px;
+  }
+
+  .skill-item:nth-child(2),
+  .skill-item:nth-child(3) {
+    padding: 24px 12px;
   }
 
   #language-list {
@@ -485,6 +499,19 @@ header {
 
   .language-item > div {
     flex-direction: column;
+    width: 100px;
+    height: 100px;
+    align-items: start;
+    border-radius: 8px;
+  }
+
+  .language-item img {
+    width: 48px;
+  }
+
+  .language-item p {
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   /* Contact Form */
