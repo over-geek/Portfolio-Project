@@ -236,13 +236,13 @@ header {
   margin-top: 0;
 }
 
-.skill-list {
+.skill-container {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
 }
 
-.skill-list button {
+.skill-container button {
   margin-right: 15px;
   background: transparent;
   border: none;
@@ -250,7 +250,7 @@ header {
   cursor: pointer;
 }
 
-.skill-list ul {
+.skill-container > ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -262,19 +262,6 @@ header {
   padding: 24px 12px;
   font-size: 20px;
   font-weight: 500;
-}
-
-.skill-list .language-item {
-  margin-bottom: 12px;
-  padding: 0 12px;
-}
-
-.language-item > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 9px 12px;
-  background-color: #f7f7f9;
 }
 
 .language-item p {
@@ -477,9 +464,10 @@ header {
   .about-container {
     grid-template-columns: 45% 55%;
     padding: 9%;
+    column-gap: 15px;
   }
 
-  .skill-list {
+  .skill-container {
     padding-top: 0;
   }
 
@@ -492,17 +480,29 @@ header {
     padding: 24px 12px;
   }
 
-  #language-list {
+  .language-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
-  .language-item > div {
-    flex-direction: column;
-    width: 100px;
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    list-style-type: none;
+    margin-left: 12px;
+  }
+
+  .language-list li div {
+    width: 115px;
     height: 100px;
-    align-items: start;
-    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f7f7f9;
+    padding-top: 12px;
+    padding-left: 12px;
   }
 
   .language-item img {
