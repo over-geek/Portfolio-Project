@@ -44,6 +44,12 @@ header {
   text-decoration: none;
 }
 
+nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /* main section */
 .main-content {
   height: 600px;
