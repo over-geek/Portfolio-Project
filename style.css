@@ -44,11 +44,58 @@ header {
   text-decoration: none;
 }
 
-nav button {
+/* nav button {
   position: relative;
   border: none;
   cursor: pointer;
   z-index: 10;
+} */
+
+.hamburger {
+  position: fixed;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #6070ff;
+    transition: all 0.5s;
+
+}
+
+.hamburger-middle{
+    transform: translateY(5px);
+}
+.hamburger-bottom{
+    transform: translateY(10px);
+}
+/* Transition hamburger to X when open*/
+.open {
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background-color: #fff;
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: #fff;
 }
 
 /* main section */
