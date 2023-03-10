@@ -196,10 +196,14 @@ document.documentElement.addEventListener('click', (e) => {
 });
 
 // Email input validation
-const form = document.getElementById('form');function validate(input) {
+const form = document.getElementById('form');
+
+function validate(input) {
   if (input === input.toLowerCase()) return true;
   return false;
-}form.addEventListener('submit', (e) => {
+}
+
+form.addEventListener('submit', (e) => {
   const email = document.getElementById('mail');
   if (!validate(email.value)) {
     e.preventDefault();
