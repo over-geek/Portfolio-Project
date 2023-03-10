@@ -169,11 +169,11 @@ function showPopUp(id) {
             </ul>
           </div>
           <div class="popup-btn">
-            <a href="">
+            <a href="${workData[id].livelink}">
               See Live
               <img src="asset/live-icon.svg" alt="live-icon"/>
             </a>
-            <a href="">
+            <a href="${workData[id].source}">
               See Source
               <img src="asset/github-blue.png" alt="github" />
             </a>
