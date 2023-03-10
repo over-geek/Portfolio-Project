@@ -194,3 +194,16 @@ document.documentElement.addEventListener('click', (e) => {
     overlay.classList.toggle('overlay-show');
   }
 });
+
+// Email input validation
+const form = document.getElementById('form');function validate(input) {
+  if (input === input.toLowerCase()) return true;
+  return false;
+}form.addEventListener('submit', (e) => {
+  const email = document.getElementById('mail');
+  if (!validate(email.value)) {
+    e.preventDefault();
+    const error = document.getElementById('error-message');
+    error.style.display = 'block';
+  }
+});
