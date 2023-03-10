@@ -44,13 +44,6 @@ header {
   text-decoration: none;
 }
 
-/* nav button {
-  position: relative;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-} */
-
 .hamburger {
   position: absolute;
   right: 20px;
@@ -233,10 +226,10 @@ header {
 }
 
 .mobile-main-menu ul li {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 32px;
-  text-transform: uppercase;
-  padding-bottom: 8px;
+  font-weight: 600;
+  line-height: 44px;
 }
 
 .card-bg-info ul li:nth-child(2) {
@@ -375,7 +368,7 @@ header {
 }
 
 .mobile-main-menu ul {
-  padding: 80px 20px 0 20px;
+  padding: 80px 28px 0 28px;
   width: 100%;
   list-style-type: none;
   color: white;
