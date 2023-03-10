@@ -95,3 +95,79 @@ function displayCard(id) {
 for (let i = 0; i < projectData.length; i += 1) {
   displayCard(i);
 }
+
+// popup window
+const projectBtn = document.querySelectorAll('.project-btn');
+const workData = [
+  {
+    name: 'Tonic',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    skills: ['html', 'css', 'javascript'],
+    technologies: ['Canopy', 'Back End Dev', '2015'],
+    source: 'https://over-geek.github.io/portfolio-project/',
+    livelink: 'https://over-geek.github.io/portfolio-project/',
+  },
+  {
+    name: 'Tonic',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    skills: ['html', 'css', 'javascript'],
+    technologies: ['Canopy', 'Back End Dev', '2015'],
+    source: 'https://over-geek.github.io/portfolio-project/',
+    livelink: 'https://over-geek.github.io/portfolio-project/',
+  },
+  {
+    name: 'Tonic',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    skills: ['html', 'css', 'javascript'],
+    technologies: ['Canopy', 'Back End Dev', '2015'],
+    source: 'https://over-geek.github.io/portfolio-project/',
+    livelink: 'https://over-geek.github.io/portfolio-project/',
+  },
+  {
+    name: 'Tonic',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    skills: ['html', 'css', 'javascript'],
+    technologies: ['Canopy', 'Back End Dev', '2015'],
+    source: 'https://over-geek.github.io/portfolio-project/',
+    livelink: 'https://over-geek.github.io/portfolio-project/',
+  },
+];
+const popUp = document.createElement('div');
+popUp.classList.add('cards');
+function showPopUp(id) {
+  body.appendChild(popUp);
+  popUp.innerHTML = `
+    <div class="card-description">
+      <h1 class="card-title">${workData[id].name}</h1>
+      <div class="card-bg-info">
+        <p>Canopy</p>
+        <ul>
+          <li>${projectData[id].technologies[0]}</li>
+          <li>${projectData[id].technologies[1]}</li>
+        </ul>
+      </div>
+      <div>
+        <img src="${projectData[id].image}" />
+      </div>
+    </div>
+    <div class="popup-description">
+      <div class="card-text">
+        <p>${workData[id].description}</p>
+      </div>
+      <div class="card-skills">
+        <ul>
+          <li>${workData[id].skills[0]}</li>
+          <li>${workData[id].skills[1]}</li>
+          <li>${workData[id].skills[2]}</li>
+        </ul>
+      </div>
+      <div class="popup-btn">
+        <button class="btn">See Live</button>
+        <button class="btn">See Source</button>
+      </div>
+    </div>
+  `;
+}
+for (let i = 0; i < projectBtn.length; i += 1) {
+  projectBtn[i].addEventListener('click', () => showPopUp(i));
+}
