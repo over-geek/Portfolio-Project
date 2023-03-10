@@ -134,12 +134,18 @@ const workData = [
   },
 ];
 const popUp = document.createElement('div');
-popUp.classList.add('cards');
+popUp.classList.add('popup');
+
 function showPopUp(id) {
+  popUp.style.display = 'block';
+  overlay.classList.toggle('overlay-show');
   body.appendChild(popUp);
   popUp.innerHTML = `
     <div class="card-description">
-      <h1 class="card-title">${workData[id].name}</h1>
+      <div class="popup-header">
+        <h1 class="card-title">${workData[id].name}</h1>
+        <button><img id="popup-close" src="asset/close-icon.svg" alt="close-icon"/></button>
+      </div>
       <div class="card-bg-info">
         <p>Canopy</p>
         <ul>
@@ -148,7 +154,7 @@ function showPopUp(id) {
         </ul>
       </div>
       <div>
-        <img src="${projectData[id].image}" />
+        <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
       </div>
     </div>
     <div class="popup-description">
@@ -172,3 +178,11 @@ function showPopUp(id) {
 for (let i = 0; i < projectBtn.length; i += 1) {
   projectBtn[i].addEventListener('click', () => showPopUp(i));
 }
+
+// closing popup window
+document.documentElement.addEventListener('click', (e) => {
+  if (e.target.matches('#popup-close')) {
+    popUp.style.display = 'none';
+    overlay.classList.toggle('overlay-show');
+  }
+});
