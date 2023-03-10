@@ -1,3 +1,4 @@
+const body = document.getElementById('body');
 const menuBtn = document.getElementById('menu-btn-open');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
