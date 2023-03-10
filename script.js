@@ -19,3 +19,35 @@ document.documentElement.addEventListener('click', (e) => {
     document.body.classList.remove('stop-scrolling');
   }
 });
+
+// Project Cards
+const projectData = [
+  {
+    image: 'asset/snapshot1.svg',
+    title: 'Tonic',
+    tecnologies: ['Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'asset/snapshot2.svg',
+    title: 'Multi-Post Stories',
+    tecnologies: ['Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'asset/snapshot3.svg',
+    title: 'Tonic',
+    tecnologies: ['Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+  {
+    image: 'asset/snapshot4.svg',
+    title: 'Multi-Post Stories',
+    tecnologies: ['Back End Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    skills: ['html', 'css', 'javascript'],
+  },
+];
