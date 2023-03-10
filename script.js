@@ -1,4 +1,3 @@
-const body = document.getElementById('body');
 const menuBtn = document.getElementById('menu-btn-open');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
@@ -133,44 +132,53 @@ const workData = [
     livelink: 'https://over-geek.github.io/portfolio-project/',
   },
 ];
-const popUp = document.createElement('div');
-popUp.classList.add('popup');
+const popUp = document.getElementById('modal');
+// popUp.classList.add('popup');
 
 function showPopUp(id) {
   popUp.style.display = 'block';
   overlay.classList.toggle('overlay-show');
-  body.appendChild(popUp);
   popUp.innerHTML = `
-    <div class="card-description">
-      <div class="popup-header">
-        <h1 class="card-title">${workData[id].name}</h1>
-        <button><img id="popup-close" src="asset/close-icon.svg" alt="close-icon"/></button>
+    <div id="myModal">
+      <div class="card-description">
+        <div class="popup-header">
+          <h1 class="card-title">${workData[id].name}</h1>
+          <button><img id="popup-close" src="asset/close-icon.svg" alt="close-icon"/></button>
+        </div>
+        <div class="card-bg-info">
+          <p>Canopy</p>
+          <ul>
+            <li>${projectData[id].technologies[0]}</li>
+            <li>${projectData[id].technologies[1]}</li>
+          </ul>
+        </div>
+        <div>
+          <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
+        </div>
       </div>
-      <div class="card-bg-info">
-        <p>Canopy</p>
-        <ul>
-          <li>${projectData[id].technologies[0]}</li>
-          <li>${projectData[id].technologies[1]}</li>
-        </ul>
-      </div>
-      <div>
-        <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
-      </div>
-    </div>
-    <div class="popup-description">
-      <div class="card-text">
-        <p>${workData[id].description}</p>
-      </div>
-      <div class="card-skills">
-        <ul>
-          <li>${workData[id].skills[0]}</li>
-          <li>${workData[id].skills[1]}</li>
-          <li>${workData[id].skills[2]}</li>
-        </ul>
-      </div>
-      <div class="popup-btn">
-        <button class="btn">See Live</button>
-        <button class="btn">See Source</button>
+      <div class="popup-description">
+        <div class="card-text">
+          <p>${workData[id].description}</p>
+        </div>
+        <div>
+          <div class="card-skills">
+            <ul>
+              <li>${workData[id].skills[0]}</li>
+              <li>${workData[id].skills[1]}</li>
+              <li>${workData[id].skills[2]}</li>
+            </ul>
+          </div>
+          <div class="popup-btn">
+            <a href="">
+              See Live
+              <img src="asset/live-icon.svg" alt="live-icon"/>
+            </a>
+            <a href="">
+              See Source
+              <img src="asset/github-blue.png" alt="github" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   `;
