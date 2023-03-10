@@ -225,6 +225,12 @@ header {
   border-radius: 8px;
 }
 
+/* Popup window */
+.popup-description {
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-main-menu ul li {
   margin-bottom: 40px;
   font-size: 32px;
